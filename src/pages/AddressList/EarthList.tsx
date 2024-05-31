@@ -2,6 +2,7 @@ import { useState } from "react";
 import { addressData } from "../../data/addressEarthData";
 import HeaderAddress from "../../components/HeaderAddress";
 import map from "../../assets/map.jpg";
+import { Link } from "react-router-dom";
 
 export default function EarthList() {
   const [selectedItemId, setSelectedItemId] = useState<number>(1);
@@ -18,7 +19,7 @@ export default function EarthList() {
       <h4 className="text-lg font-bold text-gray-800 mt-10">
         Lista de endereços
       </h4>
-      <section className="w-full h-[250px] px-4  mt-4 flex flex-col overflow-y-auto">
+      <section className="w-full h-[250px] px-4  mt-4 flex flex-col overflow-y-auto overflow-x-hidden">
         {addressData.map((item) => (
           <div
             key={item.id}
@@ -49,9 +50,14 @@ export default function EarthList() {
               <p className="font-medium">
                 {item.street}, {item.number}
               </p>
-              <div className="flex gap-4 mt-6">
-                <button className="btn  text-white">Editar Endereço</button>
-                <button className="btn btn-warning text-white">
+              <div className="w-full flex gap-2 mt-6">
+                <Link
+                  to="/edit-earth-address"
+                  className="btn w-[100px] md:w-[200px] text-white"
+                >
+                  Editar Endereço
+                </Link>
+                <button className="btn w-[100px] md:w-[200px] btn-warning text-white">
                   Remover Endereço
                 </button>
               </div>

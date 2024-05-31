@@ -48,7 +48,6 @@ export default function useAddressEarth() {
           id: addressData.length + 1,
           street,
           number,
-          complement: complement ?? "",
           neighborhood,
           city,
           state,
@@ -56,7 +55,7 @@ export default function useAddressEarth() {
           zipCode,
         });
         toast.success("Cidade adicionada com sucesso!");
-        navigate("/address");
+        navigate("/");
       } catch (error) {
         toast.error("Erro ao criar usuário!");
       } finally {

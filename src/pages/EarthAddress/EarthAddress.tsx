@@ -10,7 +10,7 @@ export default function EarthAddress() {
         <div className="p-4 flex flex-col">
           <div className="flex items-center mb-4 gap-6">
             <Link
-              to="/address"
+              to="/"
               className="flex justify-center items-center w-7 h-7 shadow-md rounded-md cursor-pointer"
             >
               <IoIosArrowBack className="font-bold text-2xl text-gray-800" />

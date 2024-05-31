@@ -29,7 +29,7 @@ export default function useAddressMars() {
           lot,
         });
         toast.success("Lote adicionado com sucesso!");
-        navigate("/address");
+        navigate("/");
       } catch (error) {
         toast.error("Erro ao criar usuário!");
       } finally {

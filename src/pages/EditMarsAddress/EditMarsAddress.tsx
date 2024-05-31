@@ -1,9 +1,9 @@
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
 import AddresForm from "./AddressForm";
-import marsBg from "../../assets/marsBg.jpg";
+import marsBg from "../../assets/mars-edit.jpg";
 
-export default function MarsAddress() {
+export default function EditMarsAddress() {
   return (
     <div className="w-screen h-screen overflow-x-hidden bg-gray-300 flex flex-col ">
       <main className="bg-gray-100 w-[390px] md:w-[600px] self-center mt-1 rounded-xl shadow-md overflow-hidden">
@@ -16,7 +16,7 @@ export default function MarsAddress() {
               <IoIosArrowBack className="font-bold text-2xl text-gray-800" />
             </Link>
             <h1 className="text-3xl font-bold text-gray-800">
-              Adicionar endereço de Marte
+              Editar endereço de Marte
             </h1>
           </div>
           <hr />
